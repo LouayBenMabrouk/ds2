@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>talkpalestine</title>
+<link href="vendor\twbs\bootstrap\dist\css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+  html {
+    height: 100%;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('handala.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Changed text color to white */
+  }
+  .content{
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #ffb3ba, #ffdfba);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #f12727;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;
+  }
+  button.btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: rgb(216, 25, 25);
+    border: none;
+    cursor: pointer;
+  }
+  button.btn:hover {
+    background-color: #ffffff;
+  }
+  nav.navbar {
+    background-color: #cb0101;
+  }
+  p.text-dark {
+    color: #ffffff;
+  }
+  button.btn-danger {
+    background-color: #39f436;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button.btn-danger:hover {
+    background-color: #000000;
+  }
+  .navbar-brand, .navbar-nav {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+    <p class="text-dark my-2 mx-5 fs-3 text-wrap navbar-brand">Justice4Palestine</p> <!-- Centered text -->
+    <div class="d-flex navbar-nav">
+      <button class="btn btn-danger mr-sm-2"><a href="accueil.php" style="text-decoration: none; color: white;">Home</a></button> <!-- Adjusted button style -->
+    </div>
+  </nav>
+</header>
+<div class="content">
+  <form method="POST" action="post_handler.php">
+    <textarea placeholder="Save the children" name="content"></textarea> <!-- Adjusted placeholder text -->
+    <button class="btn btn-dark">Publish</button> <!-- Adjusted button text -->
+  </form>
+</div>
+</body>
+</html>
